@@ -1,5 +1,8 @@
 * {
     /* how to reset your css ? */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 :root {
@@ -8,18 +11,38 @@
 
 body {
     /* how to make a background image ? */
+    background-image: url(./images/macos.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+   
+    
     
     /* do you need height and width ? */
 }
 
 #doc {
      /* you need display and position  */
+     display: flex;
+     position: fixed;
+     background-color: rgba(109, 80, 80, 0.432);
+     bottom: 0px;
+     left: 20%;
+     right: 20%;
+     justify-content: space-around;
+     border-radius: 10px;
 }
 
 .doc-icon {
     /* give a width and slow down the hover animation */
+    width: 80px;
+    transition: 1s;
+   
 }
 
 .doc-icon:hover {
     /* make the animation you like */
+   transform: scale(1.5) translateY(-20px);
 }
